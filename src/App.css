@@ -1,0 +1,130 @@
+
+* {
+  box-sizing: border-box;
+}
+
+html {
+  max-width: 100%;
+}
+
+body {
+  display: flex;
+  flex-direction: column;
+  min-height: 100%;
+  margin: 0;
+  padding: 0;
+  max-width: 100%;
+  font-family: sans-serif;
+  background-image: url('./images/background.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-color: #f2eddf;
+  font-family: 'Source Code Pro', monospace;
+  font-weight: 300;
+  color: #f2eddf;
+  border: 0.3em solid #f2eddf;
+}
+
+/*div, h1, html {
+  max-width: 100%;
+}*/
+
+/*#wrap {
+  padding: 0;
+  margin: 0;
+}*/
+
+header {
+  padding: 0.7em;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+  text-align: center;
+  margin-top: 0.3em;
+  margin-bottom: 0.3em;
+}
+
+p {
+  margin: 0;
+  font-size: 0.8em;
+}
+
+#main {
+  flex: 1;
+}
+
+.bandcamp {
+  border: 0; 
+  width: 200px; 
+  height: 342px;
+  opacity: 0.9;
+  border-radius: 1px;
+  padding-top: 0.3em;
+}
+
+#bandcamp-container {
+  text-align: center;
+}
+
+.tracklist,
+#liners-container {
+  padding: 0.7em;
+  margin: 0.7em;
+}
+
+.tracklist {
+  display: flex;
+  justify-content: space-between;
+}
+
+.tracklist ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.tracklist div:last-of-type {
+  text-align: right;
+}
+
+#liners-container {
+  display: flex;
+  margin-top: 1.5em;
+}
+
+.logo {
+  text-align: center;
+  padding-left: 2em;
+  margin-top: auto;
+}
+
+.logo img {
+  width: 75px;
+}
+
+@media screen and (max-width: 800px) {
+
+  body {
+    background-size: auto;
+  }
+
+  .tracklist,
+  #liners-container {
+    font-size: 0.8em;
+  }
+
+  #liners-container {
+    flex-wrap: wrap;
+  }
+
+  .logo {
+    padding-left: 0;
+    margin: 1em auto 0 auto;
+  }
+
+  .logo img {
+    width: 50px;
+  }
+
+}
